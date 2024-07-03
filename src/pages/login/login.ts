@@ -7,7 +7,6 @@ import { environment } from '../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { first, map } from 'rxjs/operators';
-import { validation_messages } from '../../app/forms/validations/forms-validations.page';
 import { RegisterPage } from '../register/register';
 
 /**
@@ -56,7 +55,6 @@ export class LoginPage {
         Validators.required,
       ])),
     });
-    this.validation_message = validation_messages;
   }
 
   ionViewDidLoad() {
