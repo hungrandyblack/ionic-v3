@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { AlertController, IonicPage, NavController, NavParams } from 'ionic-angular';
 import { User } from '../../app/_models/user';
 import { LoginPage } from '../login/login';
-import { HttpClient } from '@angular/common/http';
-import { FormBuilder } from '@angular/forms';
 
 /**
  * Generated class for the ProfilePage page.

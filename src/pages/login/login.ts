@@ -5,7 +5,7 @@ import { ProfilePage } from '../profile/profile';
 import { User } from '../../app/_models/user';
 import { environment } from '../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { first, map } from 'rxjs/operators';
 import { RegisterPage } from '../register/register';
 
@@ -23,7 +23,6 @@ import { RegisterPage } from '../register/register';
 })
 export class LoginPage {
 
-  private userSubject: BehaviorSubject<User | null>;
   public user: Observable<User | null>;
   validation_message: any;
   public pagePrevious: string;

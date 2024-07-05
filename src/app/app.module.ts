@@ -15,6 +15,9 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { ProfilePage } from '../pages/profile/profile';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginPageModule } from '../pages/login/login.module';
+import { RegisterPageModule } from '../pages/register/register.module';
+import { ProfilePageModule } from '../pages/profile/profile.module';
 
 
 @NgModule({
@@ -24,14 +27,14 @@ import { HttpClientModule } from '@angular/common/http';
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage,
-    RegisterPage,
-    ProfilePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,
+    LoginPageModule,
+    RegisterPageModule,
+    ProfilePageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

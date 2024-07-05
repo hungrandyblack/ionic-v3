@@ -7,12 +7,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     RegisterPage,
-    FormsModule,
-    ReactiveFormsModule,
   ],
   imports: [
     IonicPageModule.forChild(RegisterPage),
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
 })
 export class RegisterPageModule {}
